@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --bg-color: #153448;
+    --second-bg-color: #222831;
+    --text-color: #fff;
+    --second-text-color: #5DEBD7;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+/* HEADER START */
+
+.header{
+    position: fixed;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 50px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.logo p{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--text-color);
+    transition: 0.3s ease-in;
+}
+
+.logo p:hover{
+    transform: scale(1.1);
+}
+
+.logo p span{
+    color: var(--second-text-color);
+    text-shadow: 0 0 50px var(--second-text-color);
+}
+
+.nav{
+    margin-right: 150px;
+}
+
+.nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav ul li{
+    list-style: none;
+    padding-left: 3.5rem;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-bottom: 3px solid transparent;
+    transition: 0.4s ease-in-out;
+}
+
+.nav ul li a:hover{
+    color: var(--second-text-color);
+    border-bottom: 3px solid var(--second-text-color);
+    text-shadow: 0 0 25px var(--second-text-color);
+}
+
+.nav ul li button{
+    width: 150px;
+    height: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: var(--second-bg-color);
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s ease-in;
+}
+
+.nav ul li button:hover{
+    color: var(--second-text-color);
+    background-color: var(--second-bg-color);
+    box-shadow: 0 0 25px var(--second-text-color);
+    border: 2px solid var(--second-text-color);
+}
+/* HEADER END */
+/* HOME START */
+.home{
+   width: 100%;
+   height: 75vh;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.contents{
+    margin-left: 100px;
+    margin-top: 20rem;
+}
+
+.contents h1{
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 20px;
+} 
+
+.contents p{
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.contents button{
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    background-color: var(--second-bg-color);
+    border: 2px solid transparent;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.4s ease-in-out;
+}
+
+.contents button:hover{
+    color: var(--second-text-color);
+    background-color: var(--second-bg-color);
+    box-shadow: 0 0 25px var(--second-text-color);
+    border: 2px solid var(--second-text-color);
+}
+
+.reservation{
+    margin-right: 100px;
+    background-color: var(--second-bg-color);
+    padding: 30px 50px;
+    border-radius: 20px;
+    margin-top: 17rem;
+}
+
+.reservation h2{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 20px;
+    white-space: nowrap;
+}
+
+.reservation p{
+    color: #fff;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.reservation input{
+    width: 300px;
+    height: 40px;
+    display: block;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+
+.reservation input:focus {
+    outline: none;
+}
+
+.reservation button{
+    width: 200px;
+    height: 40px;
+    background-color: var(--bg-color);
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    border: 2px solid transparent;
+    margin-left: 120px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s ease-in;
+}
+
+.reservation button:hover{
+    color: var(--second-text-color);
+    background-color: var(--second-bg-color);
+    box-shadow: 0 0 25px var(--second-text-color);
+    border: 2px solid var(--second-text-color);
+}
+/* HOME END */
+/* ROOMS AND SUİTES START */
+.rooms-and-suites{
+    margin-top: 15rem;
+    padding: 5rem;
+    background-color: var(--second-bg-color);
+}
+
+.heading{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.rooms{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.room{
+    text-align: center;
+    color: #fff;
+    background-color: var(--bg-color);
+    margin-left: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px var(--second-text-color);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    border: 2px solid var(--second-text-color);
+}
+
+.room:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 50px var(--second-text-color), 0 0 75px var(--second-text-color), 0 0 100px var(--second-text-color);
+}
+
+.room:nth-child(1){
+    margin-left: 15px;
+}
+.room:nth-child(3){
+    margin-right: 15px;
+}
+
+.room h3{
+    font-size: 1.5;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+.room img{
+    width: 250px;
+    height: 150px;
+}
+
+.room p{
+    font-size: 0.8rem;
+    padding: 20px;
+}
+
+.suites{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.suite{
+    text-align: center;
+    color: #fff;
+    background-color: var(--bg-color);
+    margin-left: 50px;
+    border-radius: 10px;
+    border: 2px solid var(--second-text-color);
+    box-shadow: 0 0 25px var(--second-text-color);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.suite:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 50px var(--second-text-color), 0 0 75px var(--second-text-color), 0 0 100px var(--second-text-color);
+}
+
+.suite:nth-child(1){
+    margin-left: 15px;
+}
+.suite:nth-child(3){
+    margin-right: 15px;
+}
+
+.suite h3{
+    font-size: 1.5;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+.suite img{
+    width: 250px;
+    height: 150px;
+}
+
+.suite p{
+    font-size: 0.8rem;
+    padding: 20px;
+}
+/* ROOMS AND SUİTES END */
+/* FACİLİTİES START */
+.facilities{
+    background-color: var(--bg-color);
+    margin: 50px 50px;
+}
+
+.facilities h3{
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    /* text-shadow: 0 0 25px var(--second-text-color); */
+}
+
+.facility-box{
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 5rem;
+    border: 3px solid var(--second-text-color);
+    background-color: var(--second-bg-color);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.facility-box:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 50px var(--second-text-color);
+}
+
+.facility-box h3{
+    margin-bottom: 17rem;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.facility-box img{
+    width: 500px;
+    height: 250px;
+    margin-left: 30px;
+    border-radius: 10px;
+    border: 2px solid var(--second-text-color);
+    box-shadow: 0 0 25px var(--second-text-color);
+}
+
+.facility-box p{
+    padding-left: 20px;
+    padding-bottom: 110px;
+    color: #fff;
+}
+
+.facility-box button{
+    margin-top: 200px;
+    margin-right: 5rem;
+    width: 200px;
+    height: 50px;
+    border: 2px solid transparent;
+    background-color: var(--bg-color);
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in;
+}
+
+.facility-box button:hover{
+    box-shadow: 0 0 50px var(--second-text-color);
+    color: var(--second-text-color);
+    border: 2px solid var(--second-text-color);
+    background-color: var(--second-bg-color);
+}
+/* FACİLİTİES END */
+/* CONTACT START */
+.contact{
+    background-color: var(--second-bg-color);
+    padding: 50px 50px;
+}
+
+.contact p{
+    color: #fff;
+    text-align: center;
+}
+
+.contact-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form .input-box{
+    margin-top: 2rem;
+}
+
+.contact-form .input-box input{
+    display: block;
+    width: 400px;
+    height: 50px;
+    margin-top: 3rem;
+    font-size: 1rem;
+    margin-right: 5rem;
+    border-radius: 5px;
+    border: 2px solid var(--second-text-color);
+    background-color: var(--second-bg-color);
+    color: #fff;
+    box-shadow: 0 0 25px var(--second-text-color);
+    text-align: center;
+}
+
+.contact-form .input-box input:focus{
+    outline: none;
+}
+
+.textarea textarea{
+    width: 300px;
+    height: auto;
+    margin-top: 5.5rem;
+    font-size: 1rem;
+    resize: none;
+    border-radius: 5px;
+    border: 2px solid var(--second-text-color);
+    background-color: var(--second-bg-color);
+    color: #fff;
+    box-shadow: 0 0 25px var(--second-text-color);
+    text-align: center;
+}
+
+.contact-form .textarea textarea:focus{
+    outline: none;
+}
+
+.contact-form button{
+    margin-top: 18rem;
+    margin-left: 2rem;
+    width: 150px;
+    height: 50px;
+    border: 2px solid transparent;
+    background-color: var(--bg-color);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.4s ease-in;
+}
+
+.contact-form button:hover{
+    color: var(--second-text-color);
+    background-color: var(--second-bg-color);
+    box-shadow: 0 0 25px var(--second-text-color);
+    border: 2px solid var(--second-text-color);
+}
+/* CONTACT END */
+/* FOOTER START */
+.copyright{
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    margin: 50px 50px;
+}
+
+.social-icons{
+    width: 100%;
+    height: auto;
+    margin-left: 28.5rem;
+    margin-bottom: 2rem;
+}
+
+.social-icons a{
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    border: 2px solid var(--second-text-color);
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 30px;
+    font-size: 1.3rem;
+    transition: 0.4s ease-in-out;
+}
+
+.social-icons a:hover{
+    color: var(--text-color);
+    background-color: var(--second-text-color);
+    box-shadow: 0 0 25px var(--second-text-color);
+}
+/* FOOTER END */
